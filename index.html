@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head><meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Anthony Aramendia for Casselberry Commissioner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="site.css" />
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+</head>
+<body class="page use-fastclick">
+    <a id="top"></a>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <!--BEGIN: Content--> 
+
+        <div class="section active" id="section0"> <!-- HOME -->
+            <div class="container">
+                <div class="row centered">
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <img src="images/anthony.png" alt="black and gold friday" class="title img-responsive" width="50%" height="50%" />
+                        <p>content</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img class="video-player" id="playerA" src="images/pixel.gif" alt="video player" />
+                    </div>
+                    
+                </div>
+                <div class="row centered"><br /><br /><br /><br />
+                    <h6>Learn More</h6>
+                    <a class="btnNext start bottom" href="#section1"><i class="fa fa-chevron-down"></i></a>
+                </div><br /><br />
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div class="container">
+                
+                
+                <div class="row centered"><br /><br /><br /><br />
+                    <h6>Back to Top</h6>
+                    <a class="btnNext" href="#section0" title="back to top"><i class="fa fa-chevron-up"></i></a>
+                </div><br /><br />
+
+            </div>
+        </div>
+
+        
+    <div class="copyright">&copy; 2013 Anthony Aramendia</div>
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    <script src="jquery.slimscroll.min.js"></script>
+	<script src="jquery.fullPage.min.js"></script>
+	<script>
+	    $(document).ready(function () {
+            $.fn.fullpage({
+                verticalCentered: true,
+                resize : false,
+                anchors:['homePage', '1stPage', '2ndPage', '3rdPage', '4thPage'],
+                scrollingSpeed: 700,
+                easing: 'easeInQuart',
+                menu: false,
+                navigation: false,
+                navigationPosition: 'right',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: false,
+                autoScrolling: false,
+                scrollOverflow: false,
+                css3: true,
+                paddingTop: 0,
+                paddingBottom: 0,
+                fixedElements: '#element1, .copyright',
+
+                //events
+                onLeave: function(index, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+            });
+
+	        var tag = document.createElement('script'); tag.src = "https://www.youtube.com/player_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); 
+            $('#playerA').click(function () {var player; player = new YT.Player('playerA', { height: '300', width: '320', videoId: 'sibcnHOLPec', playerVars: { 'autoplay' : 1, 'playsinline' : 1, 'showinfo' : 0, 'controls' : 1, 'enablejsapi' : 1, 'modestbranding' : 1, 'color' : 'white', 'iv_load_policy' : 3, 'rel' : 0, 'theme' : 'light' } }); });
+            //$('#playerB').click(function () {var player; player = new YT.Player('playerB', { height: '300', width: '320', videoId: 'VzyYWD13OfQ' }); });
+        });
+    </script>
+
+
+</body>
+</html>
